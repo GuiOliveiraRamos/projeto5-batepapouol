@@ -5,7 +5,7 @@ body {
 header {
     background-color: #FFFFFF;
     height: 34px;
-    width: 800px;
+    width: 375px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -21,7 +21,7 @@ header {
 footer {
     background-color: #FFFFFF;
     height: 34px;
-    width: 800px;
+    width: 375px;
     padding: 23px;
     display: flex;
     align-items: center;
@@ -52,4 +52,40 @@ input {
 button {
     border: none;
     opacity: 1;
+}
+
+.info-mensagens {
+    background-color: #DCDCDC;
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 4px;
+}
+
+p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    margin-left: 8px;
+}
+
+.time {
+    color: #aaaaaa;
+}
+
+.name {
+    font-weight: bold;
+}
+
+
+.container-mensagens {
+    margin-top: 106px;
+    display: flex;
+    flex-direction: column;
+    height: 507px;
+    width: 400px;
 }
