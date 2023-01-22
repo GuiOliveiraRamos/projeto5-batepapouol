@@ -15,23 +15,23 @@
     <img src="./Imagens/logo 1.jpg">
     <img src="./Imagens/Vector.jpg" alt="">
 </header>
-<div class="container-mensagens">
+<div data-test="message" class="container-mensagens">
     <div class="status">
         <p class="time">(09:21:45)</p>
         <p class="name">João</p>
-        <p class="mensagem">Entrou na sala...</p>
+        <p class="Message">Entrou na sala...</p>
     </div>
-    <div class="message">
+    <div data-test="message" class="message">
         <p class="time">(09:21:45)</p>
         <p class="name">João</p>
         <p>para</p>
         <p class="name1">Todos:</p>
-        <p class="mensagem">olá marilene</p>
+        <p class="Message">olá marilene </p>
     </div>
 </div>
 <footer>
-    <input type="textMessage" name="Message" size="40" placeholder="Escreva aqui..." />
-    <button onclick="sendMessage()"><img src="./Imagens/Vector2.jpg" alt=""></button>
+    <input data-test="input-message" type="textMessage" name="Message" size="40" placeholder="Escreva aqui..." />
+    <button data-test="send-message" onclick="sendMessage()"><img src="./Imagens/Vector2.jpg" alt=""></button>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
