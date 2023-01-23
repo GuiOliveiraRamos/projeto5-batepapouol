@@ -33,7 +33,7 @@ function loginSuccess(serverAnswer) {
     for (let i = 0; i < serverAnswer.data.length - 1; i++) {
 
         textName.innerHTML = textName.innerHTML + `
-        <div class="status">
+        <div data-test = "message" class="status">
         <p class="time">(09:21:45)</p>
         <p class="name">${username}</p>
         <p class="Message">Entrou na sala...</p>
@@ -99,7 +99,7 @@ function getMessage(answer) {
 
             chat.innerHTML += `
 
-        <div class="${type}">
+        <div data-test="message"class="${type}">
         <p class="time">(${hour})</p>
         <p class="name">${name1}</p>
         <p>para</p>
