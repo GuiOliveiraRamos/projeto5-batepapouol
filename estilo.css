@@ -30,6 +30,7 @@ footer {
     bottom: 0;
     left: 0;
     right: 0;
+    z-index: 1;
     box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.05);
 }
 
@@ -56,13 +57,20 @@ button {
 
 .status,
 .message {
-    background-color: #DCDCDC;
     height: 40px;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     margin-bottom: 4px;
+}
+
+.status {
+    background-color: #DCDCDC;
+}
+
+.message {
+    background-color: #FFFFFF;
 }
 
 p {
@@ -91,4 +99,6 @@ p {
     flex-direction: column;
     height: 507px;
     width: 400px;
+    margin-bottom: 34px;
+    overflow: scroll;
 }

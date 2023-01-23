@@ -9,7 +9,6 @@ let chat = document.querySelector(".container-mensagens")
 function askUsername() {
 
     username = prompt("Digite o seu nome de usuário: ");
-    console.log((username));
 
     objUsername = {
 
@@ -29,6 +28,8 @@ askUsername()
 
 function loginSuccess(serverAnswer) {
 
+    serverMessage();
+
     let textName = document.querySelector('.container-mensagens ');
     for (let i = 0; i < serverAnswer.data.length - 1; i++) {
 
@@ -40,7 +41,8 @@ function loginSuccess(serverAnswer) {
         </div>
         `
     }
-
+    setInterval(serverMessage, 3000)
+    setInterval(stayOnline, 5000);
 }
 
 function loginFailed() {
@@ -60,8 +62,6 @@ function stayOnline() {
 
 }
 
-setInterval(stayOnline, 5000);
-
 
 function serverMessage() {
 
@@ -71,8 +71,6 @@ function serverMessage() {
     messageServer.catch(reload)
 
 }
-
-setInterval(serverMessage, 3000)
 
 
 function reload() {
@@ -107,6 +105,7 @@ function getMessage(answer) {
         <p class="mensagem">${text}</p>
         </div>
        `
+            chat.lastElementChild.scrollIntoView()
         }
 
     }
@@ -133,3 +132,5 @@ function sendMessage() {
     send.catch(reload);
 
 }
+
+
